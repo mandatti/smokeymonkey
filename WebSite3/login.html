@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/navbar-fixed-top-full.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        
+        <div class="container">
+         
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="img/logo_50_white.png">
+                    </a>
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Quem Somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="portifolio.html">Portifólio</a></li>
+                  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mais... <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                            <li><a href="register.html">Registre-se</a></li>
+                            <li><a href="projects.html">Projetos</a></li>
+                            <li><a href="rss.html">RSS</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Dúvidas?</li>
+                            <li><a href="messageus.html">Envie-nos Uma Mensagem</a></li>
+                            <li><a href="faq.html">Perguntas Frequentes (F.A.Q.)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+          </div> <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <div id="login-overlay" class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Registre-se em SmokeyMonkey.com.br</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/login/" novalidate>
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Usuário</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required title="Please enter you username" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Senha</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required title="Por favor, digite uma senha.">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Usuário ou senha incorretos.</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember">Lembrar o login e senha ?
+                                  </label>
+                                  <p class="help-block">(Não recomendado para computadores de acesso público.)</p>
+                              </div>
+                              <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                              <a href="/forgot/" class="btn btn-default btn-block">Ajude-me a entrar</a>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <p class="lead">Registre agrora <span class="text-success">SEM CUSTO</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Veja os seus projetos</li>
+                          <li><span class="fa fa-check text-success"></span> Reveja seus projetos</li>
+                          <li><span class="fa fa-check text-success"></span> Administre seu perfil</li>
+                          <li><span class="fa fa-check text-success"></span> Checkout mais rápido</li>
+                          <li><span class="fa fa-check text-success"></span> Ganhe bônus <small>(somente para novos cadastros)</small></li>
+                          <li><a href="/read-more/"><u>Saiba Mais</u></a></li>
+                      </ul>
+                      <p><a href="/new-customer/" class="btn btn-info btn-block">Cadastrar minha conta</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+       
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+</body>
+</html>
